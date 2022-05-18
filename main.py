@@ -861,8 +861,9 @@ async def menu(msg: types.Message):
 async def get_photo(message):
     global file_id
     global user_id
+    global admin_id
 
-    if message.from_user.id == 1659228199:
+    if message.from_user.id in admin_id:
         file_id = message.photo[-1].file_id
         caption = message.caption
         print(file_id) # этот идентификатор нужно где-то сохранить
