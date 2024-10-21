@@ -55,31 +55,41 @@ async def start_cmd(msg: types.Message):
     await bot.send_message(msg.from_user.id, te.MAILING_INFO)
     state = 2
 
-@dp.callback_query_handler(text='info')
+@dp.callback_query_handler(text='menu_1')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_message(id,te.OSN_TEXT,reply_markup=kb.menu_osn)
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_1)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
-@dp.callback_query_handler(text='history_alma')
+@dp.callback_query_handler(text='menu_2')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_message(id,te.HISTORY_ALMA_TEXT,reply_markup=kb.alma)
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_2)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-#Альмовская дрочильня
-@dp.callback_query_handler(text='info_konkurs')
+
+@dp.callback_query_handler(text='menu_3')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_message(id,te.INFO_KONKURS,reply_markup=kb.alma_back)
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
-@dp.callback_query_handler(text='quiz')
+@dp.callback_query_handler(text='menu_4')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_message(id,te.HISTORY_ALMA_TEXT,reply_markup=kb.alma_quiz)
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
+@dp.callback_query_handler(text='menu_5')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_1_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
+@dp.callback_query_handler(text='menu_6')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.social)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='start_ask')
 async def menu(msg: types.Message):
@@ -99,7 +109,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST2, reply_markup=kb.quiz2)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv12')
@@ -115,7 +125,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST2, reply_markup=kb.quiz2)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv21')
@@ -123,7 +133,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST3, reply_markup=kb.quiz3)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv22')
@@ -131,7 +141,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST3, reply_markup=kb.quiz3)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv23')
@@ -155,7 +165,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST4, reply_markup=kb.quiz4)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv33')
@@ -163,7 +173,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST4, reply_markup=kb.quiz4)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv41')
@@ -179,7 +189,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST5, reply_markup=kb.quiz5)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv43')
@@ -187,7 +197,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST5, reply_markup=kb.quiz5)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv51')
@@ -195,7 +205,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST6, reply_markup=kb.quiz6)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv52')
@@ -211,7 +221,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST6, reply_markup=kb.quiz6)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv61')
@@ -227,7 +237,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST7, reply_markup=kb.quiz7)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv63')
@@ -235,7 +245,7 @@ async def menu(msg: types.Message):
     global score
     await bot.send_message(msg.from_user.id, te.QUEST7, reply_markup=kb.quiz7)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    score -= 1
+    #score -= 1
 
 
 @dp.callback_query_handler(text='otv71')
@@ -245,7 +255,7 @@ async def menu(msg: types.Message):
     global rate1
     global rate2
 
-    score -= 1
+    #score -= 1
 
     await bot.send_message(msg.from_user.id, te.SCORE+str(score)+te.SCORE_OST, reply_markup=kb.alma)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
@@ -284,7 +294,7 @@ async def menu(msg: types.Message):
     global rate1
     global rate2
 
-    score -= 1
+    #score -= 1
 
 
     await bot.send_message(msg.from_user.id, te.SCORE+str(score)+te.SCORE_OST, reply_markup=kb.alma)
