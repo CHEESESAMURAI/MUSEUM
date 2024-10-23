@@ -561,4 +561,3 @@ btn3 = InlineKeyboardButton(text='Ответ',callback_data='otv73')
 quiz7.insert(btn1)
 quiz7.insert(btn2)
 quiz7.insert(btn3)
-
