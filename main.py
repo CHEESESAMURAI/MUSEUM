@@ -54,6 +54,13 @@ async def start_cmd(msg: types.Message):
 
     await bot.send_message(msg.from_user.id, te.MAILING_INFO)
     state = 2
+@dp.callback_query_handler(text='back_to_menu')
+async def menu(msg: types.Message):
+    user_name = msg.from_user.username
+    us_id = msg.from_user.id
+    id = msg.chat.id
+    await bot.send_message(id,te.START1 + str(user_name) + te.START2, reply_markup=kb.menu)
+    await bot.delete_message(msg.from_user.id, msg.message_id)
 
 @dp.callback_query_handler(text='menu_1')
 async def menu(msg: types.Message):
@@ -165,6 +172,11 @@ async def menu(msg: types.Message):
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_1_2)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
+@dp.callback_query_handler(text='menu_1_2_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_1_2_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='start_ask')
 async def menu(msg: types.Message):
