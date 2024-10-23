@@ -73,23 +73,98 @@ async def menu(msg: types.Message):
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
+@dp.callback_query_handler(text='menu_3_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_3_1_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_1_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_3_1_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_1_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_3_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_3_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_3)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_3_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_4)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_3_5')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_5)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_3_6')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_6)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+
 @dp.callback_query_handler(text='menu_4')
 async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
-@dp.callback_query_handler(text='menu_5')
+@dp.callback_query_handler(text='menu_4_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_4_1_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4_1_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_4_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_4_2_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4_2_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_4_2_1_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4_2_1_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+
+@dp.callback_query_handler(text='menu_1_2')
 async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_1_2)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
-@dp.callback_query_handler(text='menu_6')
-async def menu(msg: types.Message):
-    id = msg.from_user.id
-    await bot.send_message(id,te.TEXT,reply_markup=kb.social)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='start_ask')
 async def menu(msg: types.Message):
@@ -257,7 +332,7 @@ async def menu(msg: types.Message):
 
     #score -= 1
 
-    await bot.send_message(msg.from_user.id, te.SCORE+str(score)+te.SCORE_OST, reply_markup=kb.alma)
+    await bot.send_message(msg.from_user.id, te.SCORE+str(score)+te.SCORE_OST, reply_markup=kb.menu_4_2_1_1)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
     rate2.append(score)
@@ -277,7 +352,7 @@ async def menu(msg: types.Message):
 
     score += 1
 
-    await bot.send_message(msg.from_user.id, te.SCORE+str(score)+te.SCORE_OST, reply_markup=kb.alma)
+    await bot.send_message(msg.from_user.id, te.SCORE+str(score)+te.SCORE_OST, reply_markup=kb.menu_4_2_1_1)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
     rate2.append(score)
@@ -297,7 +372,7 @@ async def menu(msg: types.Message):
     #score -= 1
 
 
-    await bot.send_message(msg.from_user.id, te.SCORE+str(score)+te.SCORE_OST, reply_markup=kb.alma)
+    await bot.send_message(msg.from_user.id, te.SCORE+str(score)+te.SCORE_OST, reply_markup=kb.menu_4_2_1_1)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
     rate2.append(score)
@@ -361,31 +436,6 @@ async def menu(msg: types.Message):
         mailing = 0
 
 #Основное меню
-@dp.callback_query_handler(text='history')
-async def menu(msg: types.Message):
-    id = msg.from_user.id
-    await bot.send_photo(chat_id=id,photo='https://tatfrontu.ru/gallery2/d/40738-3/dsc01383.jpg',caption=te.HISTORY_TEXT,reply_markup=kb.back )
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='my_museum')
-async def menu(msg: types.Message):
-    global gg
-    gg.clear()
-    id = msg.from_user.id
-    await bot.send_message(id,te.MY_MUSEUM_TEXT,reply_markup=kb.my_museums)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='price')
-async def menu(msg: types.Message):
-    id = msg.from_user.id
-    await bot.send_photo(chat_id=id,photo='https://hi-nova.com/image/cache/catalog/myhinovafotos/443/prays-list-xiaomi-22-05-2020-1-1200x630.png',caption=te.PRICE_TEXT,reply_markup=kb.back)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='time_work')
-async def menu(msg: types.Message):
-    id = msg.from_user.id
-    await bot.send_photo(chat_id=id,photo='https://catherineasquithgallery.com/uploads/posts/2021-03/1614571359_102-p-chasi-na-belom-fone-111.png',caption=te.TIME_WORK_TEXT,reply_markup=kb.back)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.callback_query_handler(text='social')
 async def menu(msg: types.Message):
@@ -393,54 +443,6 @@ async def menu(msg: types.Message):
     await bot.send_photo(chat_id=id,photo='https://lh6.googleusercontent.com/mGchpezu3D0dYIlg6Xtn1JLSEToK75Yj1i7qFihZzfmfbWMJkj1jwj9-OjLYB4VZiIo25rEWZ07WN6SdDL0zhXTUDmyixujsJ4pTPYjezaTTUQhmNRV0TbGJXeHdzQ8kXDcvSUyl',caption=te.SOCIAL_TEXT,reply_markup=kb.social)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
-#Меню музеев
-@dp.callback_query_handler(text='museum_1')
-async def menu(msg: types.Message):
-    global gg
-    gg.append('Музей 1')
-    id = msg.from_user.id
-    await bot.send_message(id,te.MUSEUMS_1,reply_markup=kb.back_to_museum)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='museum_2')
-async def menu(msg: types.Message):
-    global gg
-    gg.append('Музей 2')
-    id = msg.from_user.id
-    await bot.send_message(id,te.MUSEUMS_2,reply_markup=kb.back_to_museum)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='museum_3')
-async def menu(msg: types.Message):
-    global gg
-    gg.append('Музей 3')
-    id = msg.from_user.id
-    await bot.send_message(id,te.MUSEUMS_3,reply_markup=kb.back_to_museum)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='museum_4')
-async def menu(msg: types.Message):
-    global gg
-    gg.append('Музей 4')
-    id = msg.from_user.id
-    await bot.send_message(id,te.MUSEUMS_4,reply_markup=kb.back_to_museum)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='museum_5')
-async def menu(msg: types.Message):
-    global gg
-    gg.append('Музей 5')
-    id = msg.from_user.id
-    await bot.send_message(id,te.MUSEUMS_5,reply_markup=kb.back_to_museum)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='museum_6')
-async def menu(msg: types.Message):
-    global gg
-    gg.append('Музей 6')
-    id = msg.from_user.id
-    await bot.send_message(id,te.MUSEUMS_6,reply_markup=kb.back_to_museum)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 #Даты
 @dp.callback_query_handler(text='1')
 async def menu(msg: types.Message):
@@ -899,48 +901,6 @@ async def menu(msg: types.Message):
     await bot.send_message(id,te.EXCURSION_DATE,reply_markup=kb.calendar)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
-#Викторина
-
-
-
-#Кнопки назад
-@dp.callback_query_handler(text='back_to_museum')
-async def menu(msg: types.Message):
-    global gg
-    gg.clear()
-    id = msg.from_user.id
-    await bot.send_message(id,te.OSN_TEXT,reply_markup=kb.my_museums)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='back_to_menu')
-async def menu(msg: types.Message):
-    global gg
-    gg.clear()
-    id = msg.from_user.id
-    await bot.send_message(id,te.OSN_TEXT,reply_markup=kb.menu)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='back_to_osn')
-async def menu(msg: types.Message):
-    global gg
-    gg.clear()
-    id = msg.from_user.id
-    await bot.send_message(id,te.BACK_TEXT,reply_markup=kb.menu_osn)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='back_to_alma')
-async def menu(msg: types.Message):
-    id = msg.from_user.id
-    await bot.send_message(id,te.HISTORY_ALMA_TEXT,reply_markup=kb.alma)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
-
-@dp.callback_query_handler(text='cancel')
-async def cancel(msg: types.Message):
-    global state
-
-    state = 0
-    await bot.send_message(msg.from_user.id,te.EXIT)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
 @dp.message_handler(content_types=types.ContentTypes.ANY)
 async def all_other_messages(message: types.Message):
