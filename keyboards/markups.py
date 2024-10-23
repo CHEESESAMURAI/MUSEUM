@@ -235,9 +235,11 @@ menu_3_6.insert(btn9)
 
 menu_4 = InlineKeyboardMarkup(row_width=1)
 btn1 = InlineKeyboardButton(text='Статистика подборки',callback_data='menu_4_1')
-btn2 = InlineKeyboardButton(text='Назад в меню',callback_data='back_to_menu')
+btn2 = InlineKeyboardButton(text='Подборки',callback_data='menu_4_2')
+btn3 = InlineKeyboardButton(text='Назад в меню',callback_data='back_to_menu')
 menu_4.insert(btn1)
 menu_4.insert(btn2)
+menu_4.insert(btn3)
 
 menu_4_1 = InlineKeyboardMarkup(row_width=1)
 btn1 = InlineKeyboardButton(text='По заданиям',callback_data='menu_4_1_1')
