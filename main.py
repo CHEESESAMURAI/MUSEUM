@@ -69,13 +69,59 @@ async def menu(msg: types.Message):
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_1)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
+@dp.callback_query_handler(text='back_to_menu_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
 @dp.callback_query_handler(text='menu_2')
 async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_2)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
+@dp.callback_query_handler(text='back_to_menu_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_2_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='back_to_menu_2_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_2_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='back_to_menu_2_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
 @dp.callback_query_handler(text='menu_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_3')
 async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3)
@@ -87,11 +133,697 @@ async def menu(msg: types.Message):
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_1)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
 
+@dp.callback_query_handler(text='back_to_menu_3_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
 @dp.callback_query_handler(text='menu_3_1_1')
 async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_1_1)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_3_1_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_1_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_3_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_3_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_3)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_3_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_3_5')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_3_6')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_4_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_4_1_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_4_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_4_2_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4_2_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_4_2_1_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_4_2_1_1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='back_to_menu_3_1_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.menu_3_1_2)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_3_1_1_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_1_1_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_1_1_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_1_1_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_1_2_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_1_2_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_1_2_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_5')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_6')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_7')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_8')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_9')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_10')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_11')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_12')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_13')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_2_14')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_5')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_6')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_7')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_8')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_9')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_10')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_3_11')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_5')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_6')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_7')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_8')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_9')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_10')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_11')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_12')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_13')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_14')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_4_15')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_5_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_5_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_5_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_5_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_5_5')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_5_6')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_5_7')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_5_8')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_6_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_6_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_6_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_6_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_3_6_5')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_5')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_6')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_7')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_8')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_9')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_10')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_12')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_13')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_14')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_15')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_16')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_17')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_18')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_19')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_20')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_21')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_22')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_23')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_24')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_25')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_4_1_1_26')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 @dp.callback_query_handler(text='menu_3_1_2')
 async def menu(msg: types.Message):
@@ -178,6 +910,34 @@ async def menu(msg: types.Message):
     id = msg.from_user.id
     await bot.send_message(id,te.TEXT,reply_markup=kb.menu_1_2_1)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
+
+@dp.callback_query_handler(text='menu_1_2_1_1')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_1_2_1_2')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_1_2_1_3')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='menu_1_2_1_4')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_message(id,te.TEXT,reply_markup=kb.back)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 @dp.callback_query_handler(text='start_ask')
 async def menu(msg: types.Message):
