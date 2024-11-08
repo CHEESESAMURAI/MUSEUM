@@ -387,16 +387,34 @@ async def menu(msg: types.Message):
 @dp.callback_query_handler(text='menu_3_3_3')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_message(id,te.TEXT,reply_markup=kb.back, protect_content=True)
+    await bot.send_photo(id,photo='https://ibb.co/L0MDRK6',caption=te.TEXT,reply_markup=kb.swap, protect_content=True)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='next_img')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_photo(id,photo='https://ibb.co/B3KwkPH',caption=te.TEXT,reply_markup=kb.swap, protect_content=True)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+#https://ibb.co/B3KwkPH big img
+
+@dp.callback_query_handler(text='back_img')
+async def menu(msg: types.Message):
+    id = msg.from_user.id
+    await bot.send_photo(id,photo='https://ibb.co/L0MDRK6',caption=te.TEXT,reply_markup=kb.swap, protect_content=True)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
 
 @dp.callback_query_handler(text='menu_3_3_4')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_message(id,te.TEXT,reply_markup=kb.back, protect_content=True)
+    await bot.send_photo(id, photo='https://ibb.co/B3KwkPH', caption=te.TEXT, reply_markup=kb.back,
+                         protect_content=True)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
-    await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+    await bot.delete_message(msg.from_user.id, msg.message.message_id - 1)
+
 
 @dp.callback_query_handler(text='menu_3_3_5')
 async def menu(msg: types.Message):
