@@ -410,7 +410,7 @@ async def menu(msg: types.Message):
 @dp.callback_query_handler(text='menu_3_3_4')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_photo(id, photo='https://ibb.co/B3KwkPH', caption=te.TEXT, reply_markup=kb.back,
+    await bot.send_photo(id, photo='https://ibb.co/xCWp87S', caption=te.TEXT, reply_markup=kb.back_to_menu_3_,
                          protect_content=True)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.delete_message(msg.from_user.id, msg.message.message_id - 1)
