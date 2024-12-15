@@ -580,9 +580,18 @@ async def menu(msg: types.Message):
 @dp.callback_query_handler(text='menu_3_5_1')
 async def menu(msg: types.Message):
     id = msg.from_user.id
-    await bot.send_message(id,te.TEXT,reply_markup=kb.back, protect_content=True)
+    await bot.send_message(id,'Найди неправильный вариант :\n\n 1) Тут зиадние испрувь иго',reply_markup=kb.zad_3_5_1, protect_content=True)
     await bot.delete_message(msg.from_user.id, msg.message.message_id)
     await bot.delete_message(msg.from_user.id, msg.message.message_id-1)
+
+@dp.callback_query_handler(text='podskazka_3_5_1')
+async def show_hint(callback: types.CallbackQuery):
+    await bot.edit_message_text(
+        chat_id=callback.message.chat.id,
+        message_id=callback.message.message_id,
+        text='Найди неправильный вариант :\n\n 1) Тут зиадние исправь eго \n\n (остальное сам исправляй)',
+        reply_markup=kb.back  # Повторно добавляем клавиатуру
+    )
 
 @dp.callback_query_handler(text='menu_3_5_2')
 async def menu(msg: types.Message):
